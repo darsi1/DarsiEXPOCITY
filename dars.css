@@ -1,0 +1,214 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #20232a; /* Dark blue background color */
+    color: white;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+/* Header */
+.site-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('hero-bg.jpg') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.site-header h1, .site-header h2 {
+    margin: 10px 0;
+}
+
+/* Navigation */
+.nav {
+    background-color: #333;
+}
+
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.nav li {
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #20232a; /* Dark blue background color */
+    padding: 50px 0;
+}
+
+.intro {
+    max-width: 500px;
+}
+
+.intro h2 {
+    font-size: 2.5em;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.intro img {
+    max-width: 100%;
+    border-radius: 50%; /* Make the image a circle */
+    margin-left: 20px; /* Position the image to the right of the introduction */
+}
+
+/* About Me Section */
+.about {
+    background-color: #20232a; /* Dark blue background color */
+    color: white;
+    padding: 50px 0;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #20232a; /* Dark blue background color */
+    padding: 50px 0;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: darkblue; /* Dark blue background color */
+    border-radius: 52px; /* Adjusted border radius for a softer shape */
+    box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1); /* Added box shadow for a lifted effect */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #20232a; /* Dark blue background color */
+    padding: 50px 0;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info, .social-media, .copyright {
+    flex: 1;
+    text-align: left;
+}
+
+.social-media a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle {
+        display: none; /* Remove the menu button */
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .intro {
+        margin-bottom: 30px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-info, .social-media, .copyright {
+        margin-bottom: 20px;
+    }
+}
+
+.sub-buttons {
+    display: none;
+}
+
+.sub-buttons.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

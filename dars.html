@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dars.css">
+    <title>Darsi Rahmani's Website</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1>Welcome to</h1>
+            <h2>Darsi Rahmani's Portfolio</h2>
+        </div>
+        <button class="menu-toggle">&#9776; Menu</button>
+        <div class="sub-buttons" id="sub-buttons">
+            <button onclick="openSlide('about')">About</button>
+            <button onclick="openSlide('projects')">Projects</button>
+            <button onclick="openSlide('contact')">Contact</button>
+        </div>
+    </header>
+
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="container hero">
+        <div class="intro">
+            <h2>Hi there!</h2>
+            <p>I'm Darsi Rahmani, a curious mind with a passion for coding and creative problem-solving.</p>
+        </div>
+        <img src="darsi.jpeg" width="500" height="500" style="margin-left: 50px;" alt="Darsi Rahmani">
+    </section>
+
+    <section id="about" class="container about">
+        <h2>About Me</h2>
+        <p>Hello! I'm Darsi Rahmani, a passionate student eager to explore and learn. Currently, I am excited about venturing into the world of web development and bringing my ideas to life on the digital canvas.</p>
+        <p>Although I have no work experience, my enthusiasm for web development fuels my dedication to gaining valuable knowledge and skills in this field.</p>
+        <p>Some of my interests include creating innovative projects, like a flash card simulator for learning the German language, and actively participating in the development of EXPOCITY, a web development project that's currently underway.</p>
+    </section>
+
+    <section id="services" class="container services">
+        <h2>Services</h2>
+        <ul>
+            <li>
+                <h3>HTML Programming</h3>
+                <p>Create structured and semantic web pages using HTML programming.</p>
+            </li>
+            <li>
+                <h3>Web Design</h3>
+                <p>Transform ideas into visually appealing and user-friendly web designs.</p>
+            </li>
+            <li>
+                <h3>Web Development</h3>
+                <p>Full-stack web development services to bring website ideas to life.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="projects" class="container projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Flash Card Simulator for German Language</h3>
+            <p>Explore the world of German language learning with this interactive flash card simulator. Enhance your vocabulary and language skills through an engaging and user-friendly experience.</p>
+        </div>
+        <div class="project">
+            <h3>EXPOCITY Web Development</h3>
+            <p>Currently involved in the EXPOCITY web development project, where we're crafting a dynamic and responsive web platform. Exciting features and a modern design are at the heart of this ongoing project.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through the following contact details:</p>
+        <p>Phone: +3550685440942</p>
+        <p>Email: darsirahmani1@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/darssi_rahmani" target="_blank" rel="noopener noreferrer">@darssi_rahmani</a></p>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <p>Contact: darsirahmani1@gmail.com</p>
+                    <p>Phone: +3550685440942</p>
+                </div>
+                <div class="social-media">
+                    <a href="https://www.instagram.com/darssi_rahmani" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2023 Darsi Rahmani. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dars.js"></script>
+</body>
+</html>
